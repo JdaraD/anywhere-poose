@@ -15,7 +15,7 @@ export default function SelectFrame() {
 
   return (
     <AdsLayout>
-      <div className="min-h-screen bg-linear-to-br from-purple-700 via-pink-500 to-orange-400 flex flex-col justify-center p-4 select-none rounded-2xl">
+      <div className="min-h-screen bg-linear-to-br from-purple-700 via-pink-500 to-orange-400 flex flex-col items-center p-4 select-none rounded-2xl">
         <h1 className="text-3xl font-bold mb-8 text-center text-white">
           Pilih Frame
         </h1>
@@ -26,7 +26,7 @@ export default function SelectFrame() {
               <img
                 src={frame.image}
                 alt={frame.name}
-                className="rounded-lg w-full"
+                className="rounded-lg w-full h-auto"
               />
 
               <button

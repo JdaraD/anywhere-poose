@@ -15,24 +15,24 @@ export const frameConfigs = [
 
     slots: [
       {
-        x: 90,
-        y: 160,
-        width: 620,
-        height: 270,
+        x: 84,
+        y: 68,
+        width: 660,
+        height: 390,
       },
 
       {
-        x: 90,
-        y: 500,
-        width: 620,
-        height: 270,
+        x: 84,
+        y: 478,
+        width: 660,
+        height: 390,
       },
 
       {
-        x: 90,
-        y: 840,
-        width: 620,
-        height: 270,
+        x: 78,
+        y: 886,
+        width: 660,
+        height: 390,
       },
     ],
   },
@@ -47,17 +47,24 @@ export const frameConfigs = [
 
     slots: [
       {
-        x: 100,
-        y: 336,
-        width: 940,
-        height: 620,
+        x: 292,
+        y: 440,
+        width: 560,
+        height: 390,
       },
 
       {
-        x: 100,
-        y: 996,
-        width: 940,
-        height: 620,
+        x: 292,
+        y: 840,
+        width: 560,
+        height: 390,
+      },
+
+      {
+        x: 292,
+        y: 1240,
+        width: 560,
+        height: 390,
       },
     ],
   },
@@ -74,20 +81,6 @@ export const frameConfigs = [
       {
         x: 150,
         y: 200,
-        width: 780,
-        height: 320,
-      },
-
-      {
-        x: 150,
-        y: 600,
-        width: 780,
-        height: 320,
-      },
-
-      {
-        x: 150,
-        y: 1000,
         width: 780,
         height: 320,
       },
