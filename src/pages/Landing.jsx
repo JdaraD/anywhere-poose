@@ -4,6 +4,12 @@ import banner from "../assets/background/Poose.png";
 export default function Landing() {
   const navigate = useNavigate();
 
+  const handleStart = () => {
+    sessionStorage.setItem("started", "true");
+
+    navigate("/select-frame");
+  };
+
   return (
     <div className="min-h-screen bg-linear-to-br from-purple-700 via-pink-500 to-orange-400 flex items-center justify-center px-4 select-none">
       {/* Container Utama Banner */}

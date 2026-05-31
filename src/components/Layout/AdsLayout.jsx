@@ -4,7 +4,14 @@ import Footer from "./Footer";
 import LeftAds from "../Ads/LeftAds";
 import RightAds from "../Ads/RightAds";
 
+import { useLocation } from "react-router-dom";
+
 export default function AdsLayout({ children }) {
+  const location = useLocation();
+
+  const showAds =
+    location.pathname === "/select-frame" || location.pathname === "/preview";
+
   return (
     <>
       <Header />
@@ -21,20 +28,28 @@ export default function AdsLayout({ children }) {
         lg:grid-cols-12
         gap-6"
       >
-        <aside className="hidden lg:block lg:col-span-2">
-          <LeftAds />
-        </aside>
+        {showAds && (
+          <aside className="hidden lg:block lg:col-span-2">
+            <LeftAds />
+          </aside>
+        )}
 
-        <section className="lg:col-span-8">{children}</section>
+        <section className={showAds ? "lg:col-span-8" : "lg:col-span-12"}>
+          {children}
+        </section>
 
-        <aside className="hidden lg:block lg:col-span-2">
-          <RightAds />
-        </aside>
+        {showAds && (
+          <aside className="hidden lg:block lg:col-span-2">
+            <RightAds />
+          </aside>
+        )}
       </main>
 
-      <div className="lg:hidden px-4 pb-4">
-        <LeftAds />
-      </div>
+      {showAds && (
+        <div className="lg:hidden px-4 pb-4">
+          <LeftAds />
+        </div>
+      )}
 
       <Footer />
     </>
