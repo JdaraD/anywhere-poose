@@ -68,7 +68,7 @@ export default function Camera() {
       <div className="flex items-center gap-4 justify-center select-none">
         <button
           onClick={() => navigate("/select-frame")}
-          className="mt-6 px-8 py-3 bg-pink-600 rounded-xl"
+          className="mt-6 lg:px-8 md:px-6 px-4 lg:py-3 md:py-2 py-2 lg:text-base md:text-sm text-xs bg-pink-600 lg:rounded-xl md:rounded-lg rounded-md"
         >
           Pilih Frame
         </button>
@@ -79,7 +79,7 @@ export default function Camera() {
 
         <button
           onClick={startCountdown}
-          className="mt-6 px-8 py-3 bg-purple-600 rounded-xl"
+          className="mt-6 lg:px-8 md:px-6 px-4 lg:py-3 md:py-2 py-2 lg:text-base md:text-sm text-xs bg-purple-600 lg:rounded-xl md:rounded-lg rounded-md "
         >
           Capture
         </button>
