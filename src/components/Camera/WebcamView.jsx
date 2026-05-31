@@ -1,12 +1,19 @@
 import Webcam from "react-webcam";
 import { useRef, useState } from "react";
 
-export default function WebcamView() {
+export default function WebcamView({ webcamRef }) {
   const [facingMode, setFacingMode] = useState("user");
 
   return (
     <div>
       <Webcam
+        ref={webcamRef}
+        audio={false}
+        mirrored={facingMode === "user"}
+        screenshotFormat="image/png"
+        videoConstraints={{
+          facingMode,
+        }}
         audio={false}
         screenshotFormat="image/png"
         videoConstraints={{
