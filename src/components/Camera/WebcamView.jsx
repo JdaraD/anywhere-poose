@@ -18,7 +18,7 @@ export default function WebcamView() {
         onClick={() =>
           setFacingMode((prev) => (prev === "user" ? "environment" : "user"))
         }
-        className="absolute lg:bottom-30 md:bottom-30 bottom-36 m-6 p-4 bg-pink-600 rounded-xl text-white hover:bg-pink-700 transition-colors"
+        className="absolute lg:bottom-30 md:bottom-30 bottom-32 m-6 p-4 bg-pink-600 rounded-xl text-white hover:bg-pink-700 transition-colors"
         aria-label="Ganti Kamera"
       >
         <svg
