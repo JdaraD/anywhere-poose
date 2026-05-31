@@ -38,7 +38,7 @@ export default function Camera() {
   };
 
   const startCountdown = () => {
-    let count = 1;
+    let count = 3;
 
     setCountdown(count);
 
@@ -65,7 +65,7 @@ export default function Camera() {
 
       <Countdown count={countdown} />
 
-      <div className="flex items-center gap-4 justify-center">
+      <div className="flex items-center gap-4 justify-center select-none">
         <button
           onClick={() => navigate("/select-frame")}
           className="mt-6 px-8 py-3 bg-pink-600 rounded-xl"

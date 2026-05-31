@@ -6,7 +6,7 @@ import frame4 from "../assets/frames/frame4.png";
 export const frameConfigs = [
   {
     id: 1,
-    name: "Party Night",
+    name: "Triple",
 
     image: frame1,
 
@@ -39,7 +39,7 @@ export const frameConfigs = [
 
   {
     id: 2,
-    name: "Double",
+    name: "Triple",
     image: frame2,
 
     canvasWidth: 1080,
@@ -79,10 +79,22 @@ export const frameConfigs = [
 
     slots: [
       {
-        x: 150,
-        y: 200,
-        width: 780,
-        height: 320,
+        x: 120,
+        y: 98,
+        width: 840,
+        height: 500,
+      },
+      {
+        x: 120,
+        y: 600,
+        width: 840,
+        height: 500,
+      },
+      {
+        x: 120,
+        y: 1120,
+        width: 840,
+        height: 500,
       },
     ],
   },
@@ -97,31 +109,28 @@ export const frameConfigs = [
 
     slots: [
       {
-        x: 140,
-        y: 180,
-        width: 800,
-        height: 260,
+        x: 96,
+        y: 400,
+        width: 418,
+        height: 690,
       },
-
       {
-        x: 140,
-        y: 500,
-        width: 800,
-        height: 260,
+        x: 98,
+        y: 1120,
+        width: 418,
+        height: 640,
       },
-
       {
-        x: 140,
-        y: 820,
-        width: 800,
-        height: 260,
+        x: 550,
+        y: 258,
+        width: 418,
+        height: 620,
       },
-
       {
-        x: 140,
-        y: 1140,
-        width: 800,
-        height: 260,
+        x: 548,
+        y: 860,
+        width: 418,
+        height: 626,
       },
     ],
   },

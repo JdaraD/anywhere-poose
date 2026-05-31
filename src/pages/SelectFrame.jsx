@@ -16,11 +16,11 @@ export default function SelectFrame() {
   return (
     <AdsLayout>
       <div className="min-h-screen bg-linear-to-br from-purple-700 via-pink-500 to-orange-400 flex flex-col items-center p-4 select-none rounded-2xl">
-        <h1 className="text-3xl font-bold mb-8 text-center text-white">
+        <h1 className="text-3xl font-bold mb-2 text-center text-white">
           Pilih Frame
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[70vh] overflow-y-auto pr-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-h-[90vh] overflow-y-auto pr-2">
           {frames.map((frame) => (
             <div key={frame.id} className="border rounded-xl p-4 bg-white/20">
               <img

@@ -4,7 +4,7 @@ export default function Countdown({ count }) {
   return (
     <div
       className="
-      text-8xl
+      text-6xl
       font-bold
       text-purple-500
       animate-pulse"
