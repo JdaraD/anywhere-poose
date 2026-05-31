@@ -61,9 +61,25 @@ export default function Camera() {
     <div className="min-h-screen bg-gray-950 text-white flex flex-col items-center justify-center">
       <h1 className="text-4xl font-bold mb-6">Ambil Foto</h1>
 
-      <WebcamView webcamRef={webcamRef} />
+      <div className="relative">
+        <WebcamView webcamRef={webcamRef} />
 
-      <Countdown count={countdown} />
+        {countdown && (
+          <div
+            className="
+        absolute
+        inset-0
+        flex
+        items-center
+        justify-center
+        bg-black/20
+        pointer-events-none
+      "
+          >
+            <Countdown count={countdown} />
+          </div>
+        )}
+      </div>
 
       <div className="flex items-center gap-4 justify-center select-none">
         <button

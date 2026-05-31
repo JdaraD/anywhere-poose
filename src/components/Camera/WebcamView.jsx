@@ -7,12 +7,21 @@ export default function WebcamView({ webcamRef }) {
   return (
     <div>
       <Webcam
+        className="rounded-xl overflow-hidden"
         ref={webcamRef}
         audio={false}
+        screenshotQuality={1}
         mirrored={facingMode === "user"}
         screenshotFormat="image/png"
         videoConstraints={{
           facingMode,
+          width: { ideal: 1920 },
+          height: { ideal: 1080 },
+        }}
+        onUserMedia={(stream) => {
+          const track = stream.getVideoTracks()[0];
+
+          console.log(track.getSettings());
         }}
         audio={false}
         screenshotFormat="image/png"
@@ -25,7 +34,7 @@ export default function WebcamView({ webcamRef }) {
         onClick={() =>
           setFacingMode((prev) => (prev === "user" ? "environment" : "user"))
         }
-        className="absolute lg:bottom-30 md:bottom-30 bottom-32 m-6 p-4 bg-pink-600 rounded-xl text-white hover:bg-pink-700 transition-colors"
+        className="absolute lg:bottom-1 md:bottom-1 bottom-2 m-6 p-4 bg-pink-600 rounded-xl text-white hover:bg-pink-700 transition-colors"
         aria-label="Ganti Kamera"
       >
         <svg
